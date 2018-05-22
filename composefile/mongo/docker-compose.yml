@@ -1,0 +1,7 @@
+mongodb: 
+    ports:
+     - "8098:27017"
+    image: mongodb
+    volumes:
+     - "/docker/composefile/mongo/entry/:/docker-entrypoint-initdb.d/" 
+    command: mongod

@@ -1,0 +1,4 @@
+nginx: 
+    ports:
+     - "8090:8090"
+    image: nginx-http
