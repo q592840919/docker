@@ -5,3 +5,7 @@ git status
 git add -A
 git commit -m "$v_time"
 git push origin master
+ssh root@47.95.215.144
+cd /docker
+git fetch origin
+git rebase origin/master
