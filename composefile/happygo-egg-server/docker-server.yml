@@ -1,0 +1,5 @@
+server:
+    ports:
+     - "8010:7001"
+    image: happygo-egg-server
+    command: npm run dev

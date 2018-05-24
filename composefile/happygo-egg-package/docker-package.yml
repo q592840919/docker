@@ -1,0 +1,3 @@
+pack:
+    image: happygo-egg-package
+    command: npm install
