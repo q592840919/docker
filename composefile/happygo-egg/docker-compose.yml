@@ -1,5 +1,11 @@
-web: 
+services:
+  package:
+    ports:
+    - "7001:7001"
+    image: happygo-egg-package
+    command: cnpm install
+  server:
     ports:
     - "8010:7001"
-    image: happygo-egg
+    image: happygo-egg-server
     command: npm run dev
