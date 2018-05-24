@@ -1,4 +1,4 @@
-web:
+pack:
     ports:
      - "7001:7001"
     image: happygo-egg-package
