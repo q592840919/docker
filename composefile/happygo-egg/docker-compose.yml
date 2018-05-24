@@ -2,7 +2,7 @@ pack:
     ports:
      - "7001:7001"
     image: happygo-egg-package
-    command: cnpm install
+    command: npm install
 redies:
     ports:
      - "8010:7001"
