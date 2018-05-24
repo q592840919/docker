@@ -1,10 +1,9 @@
-services:
-  package:
+package:
     ports:
     - "7001:7001"
     image: happygo-egg-package
     command: cnpm install
-  server:
+server:
     ports:
     - "8010:7001"
     image: happygo-egg-server
