@@ -1,11 +1,11 @@
-mongodb: 
+mysql: 
     ports:
      - "3306:3306"
-    image: mysql:5.6
+    image: mysql5.6
     environment:
       MYSQL_ROOT_PASSWORD: "123456"
     volumes:
-     - "./conf/my.cnf:/etc/mysql/conf.d/" 
-     - "./data/:/var/lib/mysql/" 
-     - "./logs/:/logs"
+     - "/docker/composefile/mongo/conf/my.cnf:/etc/mysql/conf.d/" 
+     - "/docker/composefile/mongo/data/:/var/lib/mysql/" 
+     - "/docker/composefile/mongo/logs/:/logs"
 
