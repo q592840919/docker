@@ -1,0 +1,11 @@
+mongodb: 
+    ports:
+     - "3306:3306"
+    image: mysql:5.6
+    environment:
+      MYSQL_ROOT_PASSWORD: "123456"
+    volumes:
+     - "./conf/my.cnf:/etc/mysql/conf.d/" 
+     - "./data/:/var/lib/mysql/" 
+     - "./logs/:/logs"
+
